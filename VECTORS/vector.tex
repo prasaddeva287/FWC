@@ -1,70 +1,92 @@
-\documentclass[10pt]{article}
+\documentclass[12pt]{article}
 \usepackage{graphicx}
-\usepackage{commath}
-\usepackage{gensymb}
-\usepackage{amsmath,amsfonts,amssymb}
 \usepackage[none]{hyphenat}
+\usepackage{graphicx}
 \usepackage{listings}
 \usepackage[english]{babel}
+\usepackage{graphicx}
 \usepackage{caption} 
-\usepackage{hyperref}
 \usepackage{booktabs}
 \usepackage{array}
+\usepackage{amssymb} % for \because
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{extarrows} % for Row operations arrows
 \usepackage{listings}
 \lstset{
   frame=single,
   breaklines=true
 }
+\usepackage{hyperref}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
 
-\title{VECTORS}
-\author{prasad deva}
+
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\let\vec\mathbf
+
 
 \begin{document}
 
+\begin{center}
+\title{\textbf{VECTORS}}
+\date{\vspace{-5ex}} %Not to print date automatically
 \maketitle
+\end{center}
 
+\setcounter{page}{1}
 
 \section{10$^{th}$ Maths - Chapter 10}
 
 This is Problem-3 from Exercise 10.3
 
 \begin{enumerate}
-\item Find the projection of the vector $\hat{i}-\hat{j}$ on the vector $\hat{i}+\hat{j}$  :
+\item Find the projection of the vector $\hat{i}-\hat{j}$ on the vector $\hat{i}+\hat{j}$  
 \end{enumerate}
 \section{SOLUTION}
-Taken points are $A=(1,-1), B=(1, 1)$  
-\bigskip
+Taken points are
+\begin{align}
+ \vec{A}=\myvec{1\\ -1}
+ \vec{B}=\myvec{1\\ 1}
+\end{align}
 
-The formula of the projection vector : $\frac{A^t\times B}{\norm B^2}\times B$
-\bigskip
+The formula of the projection vector :
+ 
+\begin{align}
+\frac{A\top t\times B}{\norm B^2}\times B
+\end{align}
 
 Find the projection vector:
-\bigskip
+\begin{align}
+A\top t\times B = (1, -1)\times \left(\begin{matrix}
+1\\
+1\\
+\end{matrix}\right)  = (1\times1)+(1\times-1)=0
+\end{align}
 
-$A^t\times B = (1, -1)\times \left(\begin{matrix}
+\begin{align}
+\norm B^2 = (B\top t\times B)=(1,1)\left(\begin{matrix}
 1\\
 1\\
-\end{matrix}\right)  = (1\times1)+(1\times-1)=0$
-\bigskip
+\end{matrix}\right)= (1\times1)+(1\times1)=2
+\end{align}
 
-$\norm B^2 = (B^t\times B)=(1,1)\left(\begin{matrix}
-1\\
-1\\
-\end{matrix}\right)= (1\times1)+(1\times1)=2$
- \bigskip
- 
-projection vector = $\frac{A^t\times B}{\norm B^2}\times B$
-\bigskip
-
-   =$\frac{0}{2}\times \left(\begin{matrix}
+projection vector = 
+\begin{align}
+ \frac{A\top t\times B}{\norm B^2}\times B
+   =\frac{0}{2}\times \left(\begin{matrix}
    1\\
    1\\
-   \end{matrix}\right)$
-  \bigskip
-
+   \end{matrix}\right)
     =(0,0)
-\bigskip
-
+\end{align}
 projection vector = (0,0)
 
 \begin{figure}[h]
