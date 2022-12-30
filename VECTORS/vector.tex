@@ -26,9 +26,9 @@
 %New macro definitions
 \newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
 \providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
-\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
 \newcommand{\solution}{\noindent \textbf{Solution: }}
 \newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
 \providecommand{\abs}[1]{\left\vert#1\right\vert}
 \let\vec\mathbf
 
@@ -51,41 +51,39 @@ This is Problem-3 from Exercise 10.3
 \item Find the projection of the vector $\hat{i}-\hat{j}$ on the vector $\hat{i}+\hat{j}$  
 \end{enumerate}
 \section{SOLUTION}
-Taken points are
+Given points are
 \begin{align}
- \vec{A}=\myvec{1\\ -1}
+ \vec{A}=\myvec{1\\ -1} ,
  \vec{B}=\myvec{1\\ 1}
 \end{align}
 
 The formula of the projection vector :
  
 \begin{align}
-\frac{A^\top \times B}{\norm B^2}\times B
+	\frac{\vec{A}^\top.\vec{B}}{\norm{\vec{B}}^2} \vec{B}
 \end{align}
 
-Find the projection vector:
+Find the projection vector $\vec{C}$ :
 \begin{align}
-A^\top \times B = (1, -1)\times \myvec{1\\ 1}
+	\vec{A}^\top \vec{B} = \myvec{1 &-1} \myvec{1\\ 1}=\myvec{1 *1}+\myvec{-1 * 1}=0
 \end{align}
 
 \begin{align}
-\norm B^2 = (B^\top \times B)=(1,1)\left(\begin{matrix}
-1\\
-1\\
-\end{matrix}\right)= (1\times1)+(1\times1)=2
+	\norm {\vec {B}^2} = (\vec{B}^\top  \vec{B})=\myvec{1 & 1} \myvec{1\\ 1}= (1 * 1)+(1 * 1)=2
 \end{align}
 
-projection vector = 
 \begin{align}
- \frac{A^\top \times B}{\norm B^2}\times B
-   =\frac{0}{2}\times \myvec{1\\ 1}
-    =(0,0)
+\vec{C} = 
+	\frac{\vec{A}^\top  \vec{B}}{\norm {\vec{B}}^2} \vec{B}
+   =\frac{0}{2} \myvec{1\\ 1}
+	=\myvec{0\\ 0}
 \end{align}
-projection vector = (0,0)
-
+\begin{align}
+	\vec{C}=\myvec{0\\ 0}
+\end{align}
 \begin{figure}[h]
   \centering
-  \includegraphics[scale=0.2]{vector.png}
+  \includegraphics[width=\columnwidth]{vector.png}
 \caption{}
 \end{figure}
 
