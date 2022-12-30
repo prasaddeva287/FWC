@@ -41,7 +41,7 @@ plt.plot(x_OB[0,:],x_OB[1,:],label='$OB$')
 #Labeling the coordinates
 tri_coords = np.vstack((A,B,O)).T
 plt.scatter(tri_coords[0,:], tri_coords[1,:])
-vert_labels = ['A','B','O']
+vert_labels = ['A(1,-1)','B(1,1)','O(0,0)']
 for i, txt in enumerate(vert_labels):
     plt.annotate(txt, # this is the text
                  (tri_coords[0,i], tri_coords[1,i]), # this is the point to label
