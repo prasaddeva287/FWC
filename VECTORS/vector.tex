@@ -65,26 +65,27 @@ The formula of the projection vector :
 
 Find the projection vector $\vec{C}$ :
 \begin{align}
-	\vec{A}^\top \vec{B} = \myvec{1 &-1} \myvec{1\\ 1}=\myvec{1 *1}+\myvec{-1 * 1}=0
+	\vec{A}^\top \vec{B} = \myvec{1 &-1} \myvec{1\\ 1}=\myvec{1 \times 1}+\myvec{-1 \times 1}=0
 \end{align}
 
 \begin{align}
-	\norm {\vec {B}^2} = (\vec{B}^\top  \vec{B})=\myvec{1 & 1} \myvec{1\\ 1}= (1 * 1)+(1 * 1)=2
+	\norm {\vec {B}}^2 = (\vec{B}^\top  \vec{B})=\myvec{1 & 1} \myvec{1\\ 1}= (1 \times 1)+(1 \times 1)=2
 \end{align}
 
 \begin{align}
 \vec{C} = 
-	\frac{\vec{A}^\top  \vec{B}}{\norm {\vec{B}}^2} \vec{B}
+	\frac{\vec{A}^\top  \vec{B}}{\norm {\vec{B}}}^2 \vec{B}
    =\frac{0}{2} \myvec{1\\ 1}
 	=\myvec{0\\ 0}
 \end{align}
 \begin{align}
 	\vec{C}=\myvec{0\\ 0}
 \end{align}
+\section{}
 \begin{figure}[h]
   \centering
   \includegraphics[width=\columnwidth]{vector.png}
-\caption{}
+\caption{projrection vector}
 \end{figure}
 
 \end{document}
