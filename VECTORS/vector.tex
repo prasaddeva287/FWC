@@ -60,19 +60,16 @@ Taken points are
 The formula of the projection vector :
  
 \begin{align}
-\frac{A\top t\times B}{\norm B^2}\times B
+\frac{A^\top \times B}{\norm B^2}\times B
 \end{align}
 
 Find the projection vector:
 \begin{align}
-A\top t\times B = (1, -1)\times \left(\begin{matrix}
-1\\
-1\\
-\end{matrix}\right)  = (1\times1)+(1\times-1)=0
+A^\top \times B = (1, -1)\times \myvec{1\\ 1}
 \end{align}
 
 \begin{align}
-\norm B^2 = (B\top t\times B)=(1,1)\left(\begin{matrix}
+\norm B^2 = (B^\top \times B)=(1,1)\left(\begin{matrix}
 1\\
 1\\
 \end{matrix}\right)= (1\times1)+(1\times1)=2
@@ -80,11 +77,8 @@ A\top t\times B = (1, -1)\times \left(\begin{matrix}
 
 projection vector = 
 \begin{align}
- \frac{A\top t\times B}{\norm B^2}\times B
-   =\frac{0}{2}\times \left(\begin{matrix}
-   1\\
-   1\\
-   \end{matrix}\right)
+ \frac{A^\top \times B}{\norm B^2}\times B
+   =\frac{0}{2}\times \myvec{1\\ 1}
     =(0,0)
 \end{align}
 projection vector = (0,0)
