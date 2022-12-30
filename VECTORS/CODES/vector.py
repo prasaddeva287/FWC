@@ -5,15 +5,20 @@ import math
 import sys     #for path to external scripts
 
 
+
+
+
 #Two aray vectors are given 
 A = np.array(([1, -1]))
 B = np.array(([ 1, 1]))
-O = np.array(([ 0, 0]))
+C = np.array(([0,0]))
 
 #Formula of an 
-proj = ((np.dot(A,B))/(np.linalg.norm(B)**2)) *B
+C = ((np.dot(A,B))/(np.linalg.norm(B)**2)) *B
 
-print("projection vector=", proj)
+print("C=", C)
+
+
 
 
 def line_gen(A,B):
@@ -27,21 +32,21 @@ def line_gen(A,B):
    return x_AB
 
   
-x_OA = line_gen(O,A)
-x_OB = line_gen(O,B)
+x_CA = line_gen(C,A)
+x_CB = line_gen(C,B)
 
 
 
 #Plotting all lines
-plt.plot(x_OA[0,:],x_OA[1,:],label='$OA$')
-plt.plot(x_OB[0,:],x_OB[1,:],label='$OB$')
+plt.plot(x_CA[0,:],x_CA[1,:],label='$CA$')
+plt.plot(x_CB[0,:],x_CB[1,:],label='$CB$')
 
 
 
 #Labeling the coordinates
-tri_coords = np.vstack((A,B,O)).T
+tri_coords = np.vstack((A,B,C)).T
 plt.scatter(tri_coords[0,:], tri_coords[1,:])
-vert_labels = ['A(1,-1)','B(1,1)','O(0,0)']
+vert_labels = ['A=(1,-1)','B=(1,1)','C=(0,0)']
 for i, txt in enumerate(vert_labels):
     plt.annotate(txt, # this is the text
                  (tri_coords[0,i], tri_coords[1,i]), # this is the point to label
