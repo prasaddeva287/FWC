@@ -11,24 +11,22 @@ import sys     #for path to external scripts
 #Two aray vectors are given 
 Q = np.array(([4, -1]))
 P = np.array(([ -2, -3]))
-n =(([1/2]))
-R = np.array(([2,-5/3]))
-
+n =1/2
+R = (([2,-1.6]))
 #Formula of an 
-R = Q+n*P/1+n
+R = (Q+n*P)/(1+n)
 
-print("Q=", Q)
+print("R=", R)
 
 #Two array vectors are given
 Q = np.array(([4,-1]))
 P = np.array(([-2,-3]))
-S = np.array(([0,-7/3]))
-n = (([2]))
+n = 2
+S = np.array(([0,-2.3]))
 #Formula of an
-S = Q+n*P/1+n
+S = (Q+n*P)/(1+n)
 
-print("S=", S)
-
+print('S=',S)
 
 def line_gen(Q,P):
    len =10
@@ -55,7 +53,7 @@ plt.plot(x_SP[0,:],x_SP[1,:],label='$SP$')
 #Labeling the coordinates
 tri_coords = np.vstack((Q,R,S,P)).T
 plt.scatter(tri_coords[0,:], tri_coords[1,:])
-vert_labels = ['Q''(4,-1)','R''(2,-5/3)','S''(0,-7/3)','P''(-2,-3)']
+vert_labels = ['Q''(4,-1)','R''(2,-1.6)','S''(0,-2.3)','P''(-2,-3)']
 for i, txt in enumerate(vert_labels):
     plt.annotate(txt, # this is the text
                  (tri_coords[0,i], tri_coords[1,i]), # this is the point to label
@@ -69,5 +67,5 @@ plt.legend(loc='best')
 plt.grid() # minor
 plt.axis('equal')
 plt.title('trapezium')
- 
+
 plt.show()
