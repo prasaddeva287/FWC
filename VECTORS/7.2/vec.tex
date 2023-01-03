@@ -12,6 +12,7 @@
 \usepackage{amsmath}   % for having text in math mode
 \usepackage{extarrows} % for Row operations arrows
 \usepackage{listings}
+\usepackage[utf8]{inputenc}
 \lstset{
   frame=single,
   breaklines=true
@@ -60,8 +61,8 @@ Ratio 2:1 has taken
 \begin{align}
 n=\frac{1}{2}\\
 \vec{R}=\frac{\myvec{4\\-1}+\frac{1}{2}\myvec{-2\\-3}}{1+\frac{1}{2}} \\
-\frac{\myvec{4\\-1}+\myvec{-1\\-3/2}}{\frac{3}{2}}\\
-\frac{\vec{4-1}}{\frac{3}{2}};\frac{\myvec{-1& -3/2}}{\frac{3}{2}}\\
+\frac{\myvec{4\\-1}+\myvec{-1\\ \frac{-3}{2}}}{\frac{3}{2}}\\
+\frac{\myvec{4-1}}{\frac{3}{2}}\frac{\myvec{-1+\frac{-3}{2}}}{\frac{3}{2}}\\
 \vec{R}=\myvec{2 \\ \frac{-5}{3}}
 \end{align}
 Ratio 1:2 has taken
@@ -69,7 +70,7 @@ Ratio 1:2 has taken
 n=2\\
 \vec{S}=\frac{\myvec{4\\ -1}+2\myvec{-2\\ -3}}{1+2} \\
 \frac{\myvec{4\\ -1}+\myvec{-4\\ -6}}{3}\\
-\frac{\vec{4-4}}{3};\frac{\myvec{-1&+-6}}{3}\\
+\frac{\myvec{4-4}}{3}\frac{\myvec{-1&+-6}}{3}\\
 \vec{S}=\myvec{0\\ \frac{-7}{3}}
 \end{align}
 
@@ -81,7 +82,7 @@ n=2\\
 		\label{fig:Figure}
 \end{figure}
 \begin{lstlisting}
-https://github.com/prasaddeva287/FWC/tree/main/VECTOR-2/codes
+https://github.com/prasaddeva287/FWC/tree/main/VECTORS/7.2/codes
 \end{lstlisting}
 
 \end{document}
