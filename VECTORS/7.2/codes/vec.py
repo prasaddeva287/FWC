@@ -61,8 +61,8 @@ for i, txt in enumerate(vert_labels):
                  xytext=(0,10), # distance from text to points (x,y)
                  ha='center') # horizontal alignment can be left, right or center
 
-plt.xlabel('$x_axis$')
-plt.ylabel('$y_axis$')
+plt.xlabel('$x$')
+plt.ylabel('$y$')
 plt.legend(loc='best')
 plt.grid() # minor
 plt.axis('equal')
