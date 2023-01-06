@@ -54,41 +54,47 @@ Given points are
 \vec{B}=\myvec{3\\ -2} ,
 \vec{C}=\myvec{5\\ 2}
 \end{align}
-The formula of the equation
+\begin{align}
+\vec{D}&=\frac{\vec{B}+\vec{C}}{2}\\
+&=\frac{\myvec{3\\ -2}+\myvec{5\\ 2}}{2}\\
+&=\frac{\myvec{8\\ 0}}{2}\\
+\vec{D}&=\myvec{4\\ 0}
+\end{align}
+The ar(ABD) can be expressed as
  \begin{align}
   \frac{1}{2} \norm{\brak{\vec{A}-\vec{B}}  \times 
-   \brak{\vec{A}- \vec{D}}} \label{eq:2} 
+   \brak{\vec{A}- \vec{D}}} \label{eq:6} 
 \end{align}
 \begin{align}
-	\vec{A}- \vec{B} &= \myvec{4\\ -6}-\myvec{3\\ -2}=\myvec{1\\ -4}\label{eq:3}\\
-	  \vec{A}- \vec{D} &= \myvec{4\\ -6}-\myvec{4\\ 0}=\myvec{0\\ -6}\label{eq:4}
+	\vec{A}- \vec{B} &= \myvec{4\\ -6}-\myvec{3\\ -2}=\myvec{1\\ -4}\label{eq:7}\\
+	  \vec{A}- \vec{D} &= \myvec{4\\ -6}-\myvec{4\\ 0}=\myvec{0\\ -6}\label{eq:8}
   \end{align}
-Substituting the values of \eqref{eq:3} and \eqref{eq:4} in \eqref{eq:2},
+Substituting the values of \eqref{eq:7} and \eqref{eq:8} in \eqref{eq:6},
 \begin{align}
-	\frac{1}{2}\mydet{1 & 0\\-4 & -6}  
-	&=	\frac{6}{2}\\
-	&=3
+	ar(ABD)&=\frac{1}{2}\mydet{1 & 0\\-4 & -6}\\  
+	       &=	\frac{6}{2}\\
+	ar(ABD)&=3
 \end{align}
 
 		Also, the ar(ACD) can be expressed as
   \begin{align}
   \frac{1}{2} \norm{\brak{\vec{A}-\vec{C}}  \times 
-   \brak{\vec{A}- \vec{D}}} \label{eq:7}
+   \brak{\vec{A}- \vec{D}}} \label{eq:12}
 \end{align}
 \begin{align}
-	\vec{A}- \vec{C} &= \myvec{4\\ -6}-\myvec{5\\ 2}=\myvec{-1\\ -8}\label{eq:8} \\
-	  \vec{A}- \vec{D} &= \myvec{4\\ -6}-\myvec{4\\ 0}=\myvec{0\\ -6}\label{eq:9} 
+	\vec{A}- \vec{C} &= \myvec{4\\ -6}-\myvec{5\\ 2}=\myvec{-1\\ -8}\label{eq:13} \\
+	  \vec{A}- \vec{D} &= \myvec{4\\ -6}-\myvec{4\\ 0}=\myvec{0\\ -6}\label{eq:14} 
   \end{align}
-		Substituting the values of \eqref{eq:8} and \eqref{eq:9} in \eqref{eq:7},
+		Substituting the values of \eqref{eq:13} and \eqref{eq:14} in \eqref{eq:12},
 
 		\begin{align}
-	\frac{1}{2}\mydet{-1 & 0\\-8 & -6}  
-	&=	\frac{6}{2}\\
-	&= 3
+	ar(ACD)&=\frac{1}{2}\mydet{-1 & 0\\-8 & -6}\\ 
+	       &=\frac{6}{2}\\
+	ar(ACD)&= 3
 \end{align}
 		
 The median of the triangle is  both side areas are equal $\triangle ABD=\triangle ACD$
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=\columnwidth]{fig.pdf}
 \caption{Triangle}
