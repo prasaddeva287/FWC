@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.9.14)  9 JAN 2023 18:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.9.14)  9 JAN 2023 21:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -481,7 +481,7 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on vec.pdf (5 pages, 81881 bytes).
+Output written on vec.pdf (5 pages, 81893 bytes).
 PDF statistics:
  154 PDF objects out of 1000 (max. 8388607)
  112 compressed objects within 2 object streams
