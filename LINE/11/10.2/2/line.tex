@@ -47,26 +47,35 @@
 \item Passing through the point (– 4, 3) with slope $\frac{1}{2}$
 \end{enumerate}
 \section{SOLUTION}
-Given points are (-4,3), and slope $m=\frac{1}{2}$
-
+Given points are 
+\begin{align}
+P=\myvec{-4\\ 3},
+m=\frac{1}{2}
+\end{align}
 The line formula in matrix form
 \begin{align}
-n^\top x&=c\\
+\vec{n^t\vec{(X-P)}}=0\\
+n=\myvec{1\\ \frac{1}{m}}
 \end{align}
 \begin{align}
-n&=\myvec{m\\-1}\\
-&=\myvec{\frac{1}{2}\\-1}\\
-c&=\frac{mx_1-y_1}{2}\\
-&=2 \myvec{\frac{1}{2}\times-4-3}\\
-&=\frac{-10}{2}\\
-&=-5
+\begin{pmatrix}
+    1 &2\\
+\end{pmatrix}\begin{pmatrix}
+    X-P\\
+\end{pmatrix}
 \end{align}
 
 \begin{align}
-n^\top x&=c\\
-\myvec{\frac{1}{2}\\-1}^\top x&=-5\\
-&=x-2y=-10\\
-\implies x-2y+10=0
+ \begin{pmatrix}
+    1 & 2\\
+\end{pmatrix}\begin{pmatrix}
+    x+4\\
+    y-3\\
+\end{pmatrix}
+\end{align}
+The required line equation is 
+\begin{align}
+ \vec{x}-2\vec{y}+10=0
 \end{align} 
 \section{Figure}
 \begin{figure}[h]
