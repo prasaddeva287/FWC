@@ -49,36 +49,26 @@
 \section{SOLUTION}
 Given points are 
 \begin{align}
-\vec{p}=\myvec{-4\\ 3},
+\vec{P}=\myvec{-4\\ 3},
 m=\frac{1}{2}
 \end{align}
 The line formula in matrix form
 \begin{align}
-\vec{n}^\top\brak{\vec{x}-\vec{p}} &= 0 \\
-n=\myvec{1\\ \frac{1}{m}}
+\vec{m}^\top\brak{\vec{x}-\vec{P}} &= 0 \\
+\vec{m}=\myvec{1\\ m}
 \end{align}
 \begin{align}
-\begin{pmatrix}
-    1 &2\\
-\end{pmatrix}\begin{pmatrix}
-    \vec{x}-\vec{p}\\
-\end{pmatrix}
-\end{align}
-
-\begin{align}
- \begin{pmatrix}
-    1 & 2\\
-\end{pmatrix}\begin{pmatrix}
-    x+4\\
-    y-3\\
-\end{pmatrix}
+\myvec{1 &2} \vec{x}-\vec{P}&=0\\
+\myvec{1 & 2}\myvec{x+4\\y-3}&=0
 \end{align}
 The required line equation is 
 \begin{align}
- \vec{x}-2\vec{y}+10=0
+ \vec{x}-2\vec{y}+10=0\\
+ \myvec{\vec{x}-2\vec{y}+10}&=0
 \end{align} 
 \section{Figure}
 \begin{figure}[h]
+\centering
 \includegraphics[width=\columnwidth]{fig.pdf}
 \caption{line}
 		\label{fig:Figure}
