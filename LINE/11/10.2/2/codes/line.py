@@ -15,13 +15,11 @@ def line_gen(A,B):
 #input values
 p=np.array(([-4,3]))
 m=1/2
-x=np.dot(m)*(P)
-print(x)
 
 x = np.linspace(-4,3,100)
 y = 0.5*x-5
 plt.plot(x, y, label='y=0.5x-5')
-vert_labels = ['x-2y+10']
+vert_labels = ['p(-4,3)']
 plt.title('Graph of x-2y+10=0')
 plt.xlabel('x', color='#1C2833')
 plt.ylabel('y', color='#1C2833')
