@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{commath}
+\usepackage{gensymb}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{listings}
+\lstset{
+  frame=single,
+  breaklines=true
+}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%
+
+
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+
+\begin{document}
+\begin{center}
+\title{\textbf{Properties of vectors}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+\setcounter{page}{1}
+\section{12$^{th}$ Maths - Exercise 10.4.2}
+
+\begin{enumerate}
+\item Find a unit vector  perpendicular to each of a vector $\bar{a}+\bar{b} \text{ and }\bar{a}-\bar{b}$ where  $\overrightarrow{a}=3\hat{i}+2\hat{j}+2\hat{k}\text{ and }\overrightarrow{b}=\hat{i}+2\hat{j}-2\hat{k}$
+\section{Solution}
+Now,
+\begin{align}
+\text{Let } \vec{A} = \myvec{3\\2\\2} \text{ and } \vec{B} = \myvec{1\\ 2 \\ -2}
+\end{align}
+The cross product or vector product of $\vec{A},\vec{B}$ is defined as
+\begin{align}
+ \vec{A} \times \vec{B} = \myvec{\mydet{\vec{A}_{23}&\vec{B}_{23}\\\vec{A}_{31}&\vec{B}_{31}\\\vec{A}_{12}&\vec{B}_{12}}}
+\end{align}
+Hence
+\begin{align}
+ \mydet{\vec{A}_{23}&\vec{B}_{23}}&=\mydet{2&2\\2&-2}=\myvec{-4-4}=-8\\
+ \mydet{\vec{A}_{31}&\vec{B}_{31}}&=\mydet{2&3\\-2&1}=\myvec{2-(-6)}=8\\
+ \mydet{\vec{A}_{12}&\vec{B}_{12}}&=\mydet{3&2\\1&2}=\myvec{6-2}=4
+\end{align}
+which can be represented in matrix form as
+\begin{align}
+\text{perpendicular to vector represented by}
+\hat{\vec{c}} &=\frac{\overrightarrow{\vec{c}}}{\abs{\overrightarrow{\vec{c}}}} \label{eq:6}\\
+\overrightarrow{\vec{c}}=\vec{A} \times \vec{B}&=\myvec{8\\-8\\-4} 
+\end{align}
+Hence
+\begin{align}
+\abs{\overrightarrow{\vec{c}}}&={\sqrt{8^2+(-8^2)+(-4^2)}}=12  
+\end{align}
+Here substiuing the values in \eqref{eq:6} so we get
+\begin{align}
+\hat{\vec{c}}=\myvec{1\\12}\myvec{8\\-8\\-4}
+\end{align}
+\begin{align}
+\hat{\vec{c}}=\myvec{1\\3}\myvec{2\\-2\\-1}
+\end{align}
+\end{enumerate}
+\end{document}
