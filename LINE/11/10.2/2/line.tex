@@ -1,5 +1,4 @@
 \documentclass[12pt]{article}
-\twocolumn
 \usepackage{graphicx}
 \usepackage[none]{hyphenat}
 \usepackage{graphicx}
@@ -52,15 +51,21 @@ Given points are
 \vec{P}=\myvec{-4\\ 3},
 m=\frac{1}{2}
 \end{align}
-The line formula in matrix form
+The directional vector is:
 \begin{align}
-\vec{m}^\top\brak{\vec{X}-\vec{P}} &= 0 \\
-\vec{m}=\myvec{1\\ m}
+\vec{m}=\myvec{-1\\ \frac{1}{2}}
 \end{align}
+The normal vector is:
 \begin{align}
-\myvec{1& 2}\brak{\vec{X}-\vec{P}}&=0\\ 
-\myvec{1 & 2}\brak{\myvec{\vec{x}\\\vec{y}}-\myvec{-4\\3}}&=0\\   
-\myvec{1& 2}\brak{\vec{X}}&=-10
+\vec{n}&=\myvec{\frac{1}{2}\\ -1}\\
+	\vec{n}^\top&=\myvec{\frac{1}{2}& -1}	
+\end{align}
+The line equation is represented in the form of 
+\begin{align}
+\vec{n}^\top \brak{\vec{x}-\vec{P}}&= 0 \\
+\myvec{\frac{1}{2}& -1}\brak{\vec{x}-\vec{P}}&=0\\ 
+\myvec{\frac{1}{2}& -1}\brak{\myvec{\vec{x}}-\myvec{-4\\3}}&=0\\   
+\myvec{\frac{1}{2}& -1}\brak{\vec{x}}&=-10
 \end{align}
 \section{Figure}
 \begin{figure}[h]
