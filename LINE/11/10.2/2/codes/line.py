@@ -12,7 +12,7 @@ import subprocess
 import shlex
 #end if
 
-def line_dir_pt(m,A,k1,k2):
+def line_dir_pt(m,P,k1,k2):
   len = 10
   dim = A.shape[0]
   x_AB = np.zeros((dim,len))
