@@ -14,11 +14,11 @@ import shlex
 
 def line_dir_pt(m,P,k1,k2):
   len = 10
-  dim = A.shape[0]
+  dim = P.shape[0]
   x_AB = np.zeros((dim,len))
   lam_1 = np.linspace(k1,k2,len)
   for i in range(len):
-    temp1 = A + lam_1[i]*m
+    temp1 = P + lam_1[i]*m
     x_AB[:,i]= temp1.T
   return x_AB       
 
