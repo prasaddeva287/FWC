@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amssymb} % for \because
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{extarrows} % for Row operations arrows
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\lstset{
+  frame=single,
+  breaklines=true
+}
+\usepackage{hyperref}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+
+
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\let\vec\mathbf
+
+\begin{document}
+
+\begin{center}
+\title{\textbf{LINE}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+
+\section{11$^{th}$ Maths - EXERCISE-10.3}
+\begin{enumerate}
+\item The line through the points (h, 3) and (4, 1) intersects the line 7x- 9y- 19= 0 at right angle. Find the value of h.
+\end{enumerate}
+\section{SOLUTION}
+Given points are P=\myvec{h\\ 3},Q=\myvec{4\\ 1},B=\myvec{9\\ 7}
+\begin{align}
+\vec{A}=\vec{Q}-\vec{P}&=\myvec{4\\ 1}-\myvec{h\\ 3}\\
+\vec{A}&=\myvec{4-h\\ -2}
+\end{align}
+The formula for the line 
+\begin{align}
+\theta&=90^\circ\\
+cos\theta&=90^\circ=0\\
+cos\theta&=\frac{\vec{A}^\top\vec{B}}{\norm{A}\norm{B}}\\
+&=\myvec{4-h& -2}\myvec{9\\ 7}\\
+&=9\myvec{4-h}-14\\
+22&=9h\\
+h&=\frac{22}{9}
+\end{align}
+\section{Figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=\columnwidth]{fig.pdf}
+\caption{line}
+		\label{fig:Figure}
+\end{figure}
+\end{document}
