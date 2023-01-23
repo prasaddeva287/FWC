@@ -61,4 +61,4 @@ plt.legend(loc='upper right')
 plt.grid()   
 plt.axis('equal')   
 plt.show()  
-#plt.savefig('../figs/fig.pdf')
+
