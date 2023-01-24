@@ -31,20 +31,20 @@ def line_gen(Q,P):
 A = np.array(([0,32/3]))  
 B = np.array(([0,-8/3]))  
 P=  np.array(([0,4]))  
-  
+
+I = np.array([-4,9.3])
+J = np.array([4,-1.3])
 #Direction vector      
 m=np.array(([4,3]))                                                                 
 z=np.array(([0,1],[-1,0]))                              
 n=m@z  
 print(n)  
 ##Generating the line    
-k1=-0.8 
-k2=0.8 
-k3=-7 
-k4=9  
+k1=-2 
+k2=2
 x_AB = line_dir_pt(n,P,k1,k2)     
-x_AP = line_gen(P,A)
-x_BP = line_gen(P,B)
+x_AP = line_gen(I,A)
+x_BP = line_gen(J,B)
   
    
 #Plotting all lines   
@@ -70,6 +70,4 @@ plt.title('points (0,32/3) and (0,-8/3) intersects the line 4x+3y-12= 0 ')
 plt.legend(loc='upper right')   
 plt.grid()   
 plt.axis('equal')   
-plt.show()  
-
-
+plt.show()
