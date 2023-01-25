@@ -66,7 +66,7 @@ for i, txt in enumerate(vert_labels):
     # Add labels and show the plot   
 plt.xlabel('x')   
 plt.ylabel('y')   
-plt.title('points (0,32/3) and (0,-8/3) intersects the line 4x+3y-12= 0 ')   
+plt.title('points (0,32/3) and (0,-8/3) intersects the line (4 3)x=12 ')   
 plt.legend(loc='upper right')   
 plt.grid()   
 plt.axis('equal')   
