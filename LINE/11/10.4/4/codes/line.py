@@ -42,13 +42,13 @@ print(n)
 ##Generating the line    
 k1=-2 
 k2=2
-#x_AB = line_dir_pt(n,P,k1,k2)     
+x_AB = line_dir_pt(n,P,k1,k2)     
 x_AP = line_gen(I,A)
 x_BP = line_gen(J,B)
   
    
 #Plotting all lines   
-#plt.plot(x_AB[0,:],x_AB[1,:],label='(4 3)x=12')   
+plt.plot(x_AB[0,:],x_AB[1,:],label='(4 3)x=12')   
 plt.plot(x_AP[0,:],x_AP[1,:],label='$AB$')
 plt.plot(x_BP[0,:],x_BP[1,:],label='$AD$')
     
