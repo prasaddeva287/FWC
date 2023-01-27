@@ -1,3 +1,4 @@
+
 #Python libraries for math and graphics   
 import numpy as np   
 import mpmath as mp   
@@ -30,32 +31,33 @@ def line_gen(Q,P):
   
 A = np.array(([0,32/3]))  
 B = np.array(([0,-8/3]))  
-P=  np.array(([0,4]))  
+P=  np.array(([-3.2,8.266666667]))
+Q=np.array([3.2,-0.266666667])
+d=ma.dist(A,P)
+print(d)
 
-I = np.array([-4,9.3])
-J = np.array([4,-1.3])
 #Direction vector      
 m=np.array(([4,3]))                                                                 
 z=np.array(([0,1],[-1,0]))                              
 n=m@z  
 print(n)  
 ##Generating the line    
-k1=-2 
-k2=2
+k1=-3 
+k2=3
 x_AB = line_dir_pt(n,P,k1,k2)     
-x_AP = line_gen(I,A)
-x_BP = line_gen(J,B)
+x_AP = line_gen(A,P)
+x_BQ = line_gen(B,Q)
   
    
-#Plotting all lines   
+#Plo3ting all lines   
 plt.plot(x_AB[0,:],x_AB[1,:],label='(4 3)x=12')   
-plt.plot(x_AP[0,:],x_AP[1,:],label='$AB$')
-plt.plot(x_BP[0,:],x_BP[1,:],label='$AD$')
+plt.plot(x_AP[0,:],x_AP[1,:],label='$AP$')
+plt.plot(x_BQ[0,:],x_BQ[1,:],label='$BP$')
     
 #Labeling the coordinates  
-tri_coords = np.vstack((A,B)).T  
+tri_coords = np.vstack((A,B,P,Q)).T  
 plt.scatter(tri_coords[0,:], tri_coords[1,:])  
-vert_labels = ['A''(0,32/3) ','B''(0,-8/3)']  
+vert_labels = ['A''(0,32/3) ','B''(0,-8/3)','P','Q']  
 for i, txt in enumerate(vert_labels):  
     plt.annotate(txt, # this is the text  
                  (tri_coords[0,i], tri_coords[1,i]), # this is the point to label  
@@ -70,4 +72,4 @@ plt.title('points (0,32/3) and (0,-8/3) intersects the line (4 3)x=12 ')
 plt.legend(loc='upper right')   
 plt.grid()   
 plt.axis('equal')   
-plt.show()
+plt.show(),'P','Q'
