@@ -52,7 +52,7 @@ x_BQ = line_gen(B,Q)
 #Plo3ting all lines   
 plt.plot(x_AB[0,:],x_AB[1,:],label='(4 3)x=12')   
 plt.plot(x_AP[0,:],x_AP[1,:],label='$AP$')
-plt.plot(x_BQ[0,:],x_BQ[1,:],label='$BP$')
+plt.plot(x_BQ[0,:],x_BQ[1,:],label='$BQ$')
     
 #Labeling the coordinates  
 tri_coords = np.vstack((A,B,P,Q)).T  
