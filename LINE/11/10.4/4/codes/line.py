@@ -1,8 +1,8 @@
-
 #Python libraries for math and graphics   
 import numpy as np   
 import mpmath as mp   
-import math as ma   
+import math as ma
+import sympy as sym
 import matplotlib.pyplot as plt   
 from numpy import linalg as LA   
    
@@ -33,18 +33,39 @@ A = np.array(([0,32/3]))
 B = np.array(([0,-8/3]))  
 P=  np.array(([-3.2,8.266666667]))
 Q=np.array([3.2,-0.266666667])
-d=ma.dist(A,P)
-print(d)
 
-#Direction vector      
-m=np.array(([4,3]))                                                                 
-z=np.array(([0,1],[-1,0]))                              
-n=m@z  
-print(n)  
+n=np.array([4,3])
+omat=np.array(([0,1],[-1,0]))
+m=omat@(n.T)
+c=12
+x=sym.Symbol('x')
+y=sym.Symbol('y')
+X=np.array([x,y])
+D=np.array(([3,-4],[4,3]))
+print(D)
+E=D@np.transpose(X)
+print(E)
+A=np.array([0,32/3])
+co=np.array([m@np.transpose(A),c])
+print(co)
+B=np.array([0,-8/3])
+C1=np.array([m@np.transpose(B),c])
+print(C1)
+
+a = np.array([[3,-4],[4,3]])
+b = np.array([[-128/3],[12]]) 
+x1 = np.linalg.solve(a, b)
+print(x1)
+
+a1 = np.array([[3,-4],[4,3]])
+b1 = np.array([[32/3],[12]]) 
+x2 = np.linalg.solve(a1, b1)
+print(x2)
+
 ##Generating the line    
 k1=-3 
 k2=3
-x_AB = line_dir_pt(n,P,k1,k2)     
+x_AB = line_dir_pt(m,Q,k1,k2)     
 x_AP = line_gen(A,P)
 x_BQ = line_gen(B,Q)
   
