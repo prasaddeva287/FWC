@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.9.14)  30 JAN 2023 16:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.9.14)  31 JAN 2023 10:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -200,29 +200,37 @@ Package gensymb Info: Using \Omega for \ohm on input line 14.
 
 Package gensymb Warning: Not defining \micro.
 
+<circle.png, id=1, 462.528pt x 346.896pt>
+File: circle.png Graphic file (type png)
+<use circle.png>
+Package pdftex.def Info: circle.png  used on input line 48.
+(pdftex.def)             Requested size: 390.0pt x 292.5128pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./circle.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./circle.png>]
+(./circle.aux) ) 
 Here is how much of TeX's memory you used:
- 2471 strings out of 479304
- 36652 string characters out of 5869779
- 325308 words of memory out of 5000000
- 19667 multiletter control sequences out of 15000+600000
+ 2478 strings out of 479304
+ 36741 string characters out of 5869779
+ 327316 words of memory out of 5000000
+ 19673 multiletter control sequences out of 15000+600000
  408681 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,14n,74p,224b,182s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy8.pfb>
-Output written on circle.pdf (1 page, 65523 bytes).
+ 68i,14n,74p,224b,230s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on circle.pdf (2 pages, 87471 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
+ 42 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
