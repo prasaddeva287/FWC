@@ -2,7 +2,7 @@ import numpy as np
 
 def circle_equation(a, b):
     center = np.array([-a, -b])
-    radius = a**2 - b**2
+    radius = np.sqrt(a**2 - b**2)
     equation = "({x} + {a})^2 + ({y} + {b})^2 = {r}^2".format(x=center[0], y=center[1], a=a, b=b, r=radius)
     return equation
 
