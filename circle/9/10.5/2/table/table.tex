@@ -125,8 +125,7 @@
 \setlength\gnumericTableWidth{%
 	53pt+%
 	53pt+%
-	82pt+%
-	53pt+%
+	120pt+%
 0pt}
 \def\gumericNumCols{4}
 \setlength\gnumericTableWidthComplete{\gnumericTableWidth+%
@@ -148,7 +147,7 @@
 
 \ifthenelse{\isundefined{\gnumericColA}}{\newlength{\gnumericColA}}{}\settowidth{\gnumericColA}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
 \ifthenelse{\isundefined{\gnumericColB}}{\newlength{\gnumericColB}}{}\settowidth{\gnumericColB}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColC}}{\newlength{\gnumericColC}}{}\settowidth{\gnumericColC}{\begin{tabular}{@{}p{94pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColC}}{\newlength{\gnumericColC}}{}\settowidth{\gnumericColC}{\begin{tabular}{@{}p{120pt*\gnumericScale}@{}}x\end{tabular}}
 \ifthenelse{\isundefined{\gnumericColD}}{\newlength{\gnumericColD}}{}\settowidth{\gnumericColD}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
 
 	\begin{center}
@@ -204,7 +203,7 @@
 \\
 \hhline{|---|~}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\centering}\gnumbox{$\vec{r}$}}
+	{\gnumericPB{\centering}\gnumbox{$r$}}
 	&\multicolumn{1}{p{\gnumericColB}|}%
 	{\gnumericPB{\centering}\gnumbox{$1$}}
 	&\multicolumn{1}{p{\gnumericColC}|}%
@@ -226,7 +225,7 @@
 	&\multicolumn{1}{p{\gnumericColB}|}%
 	{\gnumericPB{\centering}\gnumbox{$\myvec{1\\0}$}}
 	&\multicolumn{1}{p{\gnumericColC}|}%
-	{\gnumericPB{\centering}\gnumbox{$\vec{P}=\vec{e_1}$}}
+	{\gnumericPB{\centering}\gnumbox{standard basis vector$\vec{e_1}$}}
 	&
 \\
 \hhline{|---|~}
@@ -235,7 +234,7 @@
 	&\multicolumn{1}{p{\gnumericColB}|}%
 	{\gnumericPB{\centering}\gnumbox{$60\degree$}}
 	&\multicolumn{1}{p{\gnumericColC}|}%
-	{\gnumericPB{\centering}\gnumbox{$-$}}
+	{\gnumericPB{\centering}\gnumbox{$\angle QOP$}}
 	&
 \\
 \hhline{|---|~}
@@ -244,7 +243,7 @@
 	&\multicolumn{1}{p{\gnumericColB}|}%
 	{\gnumericPB{\centering}\gnumbox{$130\degree$}}
 	&\multicolumn{1}{p{\gnumericColC}|}%
-	{\gnumericPB{\centering}\gnumbox{ $-$}}
+	{\gnumericPB{\centering}\gnumbox{ $\angle QRP$}}
 	&
 \\
 \hhline{|---|~}
@@ -253,7 +252,7 @@
 	&\multicolumn{1}{p{\gnumericColB}|}%
 	{\gnumericPB{\centering}\gnumbox{$-40\degree$}}
 	&\multicolumn{1}{p{\gnumericColC}|}%
-	{\gnumericPB{\centering}\gnumbox{ $-$}}
+	{\gnumericPB{\centering}\gnumbox{ $\angle QSP$}}
 	&	
 \\
 \hhline{|-|-|-|~}
