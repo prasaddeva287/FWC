@@ -21,6 +21,7 @@ def line_gen(A,B):
     x_AB[:,i]= temp1.T
   return x_AB
 
+#input parameters are
 r=1
 u=0
 O=np.array(([0,0]))  
@@ -28,15 +29,18 @@ P=np.array(([1,0]))
 theta=60*np.pi/180
 alpha=130*np.pi/180
 beta=-40*np.pi/180
+#output parameters are
 Q=np.array([np.cos(theta),np.sin(theta)])
 R=np.array([np.cos(alpha),np.sin(alpha)])
 S=np.array([np.cos(beta),np.sin(beta)])
 m=math.dist(Q,R)*math.dist(P,R)
-m1=math.dist(Q,R)**2*math.dist(P,R)**2
+m1=np.linalg.norm(Q-R)**2*np.linalg.norm(P-R)**2
 M=m/m1
+angle1=np.arccos(M)
 n=math.dist(Q,S)*math.dist(P,S)
-n1=math.dist(Q,S)**2*math.dist(P,S)**2
+n1=np.linalg.norm(Q-S)**2*np.linalg.norm(P-S)**2
 N=n/n1
+angle2=np.arccos(N)
 print(Q)
 print(R)
 print(S)
@@ -46,7 +50,8 @@ print(M)
 print(n)
 print(n1)
 print(N)
-
+print(angle1)
+print(angle2)
 ##Generating the li
 
 xOQ = line_gen(O,Q)
@@ -62,11 +67,11 @@ x_circ= circ_gen(O,r)
 #Plotting all lines
 plt.plot(xQP[0,:],xQP[1,:],label='QP')
 plt.plot(xPS[0,:],xPS[1,:],label='PS')
-plt.plot(xOQ[0,:],xOQ[1,:],label='OA')
-plt.plot(xOP[0,:],xOP[1,:],label='OB')
-plt.plot(xQS[0,:],xQS[1,:],label='OC')
-plt.plot(xQR[0,:],xQR[1,:],label='CD')
-plt.plot(xPR[0,:],xPR[1,:],label='AD')
+plt.plot(xOQ[0,:],xOQ[1,:],label='OQ')
+plt.plot(xOP[0,:],xOP[1,:],label='OP')
+plt.plot(xQS[0,:],xQS[1,:],label='QS')
+plt.plot(xQR[0,:],xQR[1,:],label='QR')
+plt.plot(xPR[0,:],xPR[1,:],label='PR')
 
 #Plotting the circle
 plt.plot(x_circ[0,:],x_circ[1,:],label='Circle')
@@ -85,11 +90,7 @@ for i, txt in enumerate(vert_labels):
 
 plt.xlabel('$x$')
 plt.ylabel('$y$')
-#plt.legend(loc='best')
+plt.legend(loc='best')
 plt.grid() # minor
 plt.axis('equal')
-
-#if using termux
-#plt.savefig('/sdcard/download/fwcassgn/trunk/fwcassgn/trunk/circles/9.10.5.1/figs/circle2.png')
-#else
 plt.show()
