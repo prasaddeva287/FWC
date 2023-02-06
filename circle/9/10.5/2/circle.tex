@@ -32,7 +32,7 @@
 \section{EXERCISE-10.5}
 \item A chord of a circle is equal to the radius of the circle. Find the angle subtended by the chord at a point on the minor arc and also at a point on the major arc.
 \section{SOLUTION}
-The input parameters are the length\\
+The input parameters are\\
 \begin{table}[h!]
 	\input{/home/prasaddeva287/prasad/circle/9-10.5-2/table/table.tex}
 \caption{}
@@ -46,19 +46,19 @@ Take three points Q,R and P on a unit circle  at angles $\theta,\alpha,\text{ an
 	\vec{S} = \myvec{cos\beta\\sin\beta}
 \end{align}
 \begin{align}
-	\cos\angle QRP&= \frac{(Q-R)(P-R)}{\mydet{Q-R}\mydet{P-R}}\label{2}
+	\cos\angle QRP&= \frac{\brak{\vec{Q}-\vec{R}}\brak{\vec{P}-\vec{R}}}{\mydet{\vec{Q}-\vec{R}}\mydet{\vec{P}-\vec{R}}}\label{2}
 \end{align}
 Where
 \begin{align}
-(Q-R, P-R)&= (\cos\theta-\cos\alpha,\sin\theta-\sin\alpha),\myvec{1-\cos\alpha,& o-\sin\alpha}\\
-&=(\cos\theta-\cos\alpha)\cos\alpha+(\sin\theta-\sin\alpha)\\
+\brak{\vec{Q}-\vec{R}}\brak{\vec{P}-\vec{R}}&= \brak{\cos\theta-\cos\alpha \sin\theta-\sin\alpha}\myvec{1-\cos\alpha &o-\sin\alpha}\\
+&=\brak{\cos\theta-\cos\alpha}\cos\alpha+\brak{\sin\theta-\sin\alpha}\\
 &=2\sin\frac{\theta-\alpha}{2}\sin\frac{\theta+\alpha}{2}\cos\alpha+2\cos\frac{\theta+\alpha}{2}\sin\frac{\theta-\alpha}{2}\\
-&=(\cos\alpha-\cos\theta)\cos\alpha+(\sin\theta-\sin\alpha)\label{6}
+&=\brak{\cos\alpha-\cos\theta}\cos\alpha+\brak{\sin\theta-\sin\alpha}\label{6}
 \end{align}
 \begin{align}
-\mydet{Q-R}^2\mydet{P-R}^2 &= ((\cos\theta-\cos\alpha)^2+(\sin\theta-\sin\alpha)^2)
-	((1-\cos\alpha)^2+(0-\sin\alpha)^2)\\
-	&=(2-2\cos\theta\cos\alpha-2\sin\theta\sin\alpha)(2-\cos\alpha)\label{8}
+\mydet{\vec{Q}-\vec{R}}^2\mydet{\vec{P}-\vec{R}}^2 &= \brak{\cos\theta-\cos\alpha}^2+\brak{\sin\theta-\sin\alpha}^2
+	\brak{1-\cos\alpha}^2+\brak{0-\sin\alpha}^2\\
+	&=\brak{2-2\cos\theta\cos\alpha-2\sin\theta\sin\alpha}\brak{2-\cos\alpha}\label{8}
 \end{align}
 substituing the \eqref{6} and \eqref{8} in \eqref{2}
 \begin{align}
@@ -67,18 +67,18 @@ substituing the \eqref{6} and \eqref{8} in \eqref{2}
 \angle QRP&=66\degree
 \end{align}
 \begin{align}
-\cos\angle QSP&= \frac{ (Q-S) (P-S)}{\mydet{Q-S}\mydet{P-S}}\label{12}
+\cos\angle QSP&= \frac{\brak{\vec{Q}-\vec{S}}\brak{\vec{P}-\vec{S}}}{\mydet{\vec{Q}-\vec{S}}\mydet{\vec{P}-\vec{S}}}\label{12}
 \end{align}
 \begin{align}
-(Q-S, P-S) &= (\cos\theta-\cos\beta,\sin\theta-\sin\beta),\myvec{1-\cos\beta,& o-\sin\beta}\\
-&=(\cos\theta-\cos\beta)\cos\beta+(\sin\theta-\sin\beta)\\
+\brak{\vec{Q}-\vec{S}}\brak{\vec{P}-\vec{S}}&= \brak{\cos\theta-\cos\beta \sin\theta-\sin\beta}\myvec{1-\cos\beta &o-\sin\beta}\\
+&=\brak{\cos\theta-\cos\beta}\cos\beta+\brak{\sin\theta-\sin\beta}\\
 &=2\sin\frac{\theta-\beta}{2}\sin\frac{\theta+\beta}{2}\cos\beta+2\cos\frac{\theta+\beta}{2}\sin\frac{\theta-\beta}{2}\\
-&=(\cos\beta-\cos\theta)\cos\beta+(\sin\theta-\sin\beta)\label{16}
+&=\brak{\cos\beta-\cos\theta}\cos\beta+\brak{\sin\theta-\sin\beta}\label{16}
 \end{align}
 \begin{align}
-\mydet{Q-S}^2\mydet{P-S}^2 &= ((\cos\theta-\cos\beta)^2+(\sin\theta-\sin\beta)^2)
-	((1-\cos\beta)^2+(0-\sin\beta)^2)\\
-	&=(2-2\cos\theta\cos\beta-2\sin\theta\sin\beta)(2-\cos\beta)\label{18}
+\mydet{\vec{Q}-\vec{S}}^2\mydet{\vec{P}-\vec{S}}^2 &= \brak{\cos\theta-\cos\beta}^2+\brak{\sin\theta-\sin\beta}^2
+	\brak{1-\cos\beta}^2+\brak{0-\sin\beta}^2)\\
+	&=\brak{2-2\cos\theta\cos\beta-2\sin\theta\sin\beta}\brak{2-\cos\beta}\label{18}
 \end{align}
 substituing the \eqref{16} and \eqref{18} in \eqref{12}
 \begin{align}
@@ -90,7 +90,7 @@ substituing the \eqref{16} and \eqref{18} in \eqref{12}
 \begin{figure}[h]
 \centering
 \includegraphics[width=\columnwidth]{circle.png}
-\caption{circle}
+\caption{}
 		\label{fig:Figure}
 \end{figure}
 \end{enumerate}
