@@ -1,13 +1,13 @@
 /*Code by Deva prasad (works on termux)
 Feb 13, 2023
 To find the projection of the vector from (1,-1) and (1,1)*/
-#include<stdio.h>
+#include<stdio.h>    // including stdio.h it is used for standard input and output functions
 #include<stdlib.h>
 #include<math.h>
 #include<string.h>
-#include"prasad.h"   //Functions
+#include"prasad.h"   // This is the header file which includes all the math functions
 
-int main()
+int main()     //main function
 {
 double **a,**b,**c,**d,e,**g;    //initializing the variables as matrices
 int m=2,n=1,e1,d1,f;
