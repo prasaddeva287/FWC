@@ -18,16 +18,16 @@ b=loadtxt("b.dat",m,n);     //loading the point B from the text file
 c=transpose(a,m,n);         //Finding the Transpose of the matrix
 print(c,n,m);               //printing the result
 d=matmul(c,b,n,m,n);        //Multiplications function 
-print(d,n,m);               // printing the result
+print(d,n,m);               //printing the result
 e=linalg_norm(b,m);         //Finding the norm of the matrix
-e1=square(e);                //finding the Square of the norm
+e1=e*e;                     //finding the Square of the norm
 printf("%lf",e1);
 d1=d[0][0];                  
 f=d1/e1;                    //dividing the numerator with denominator
 printf("%lf",f);            //printing the result
 printf("\n");
-g=mult_int(f,b,m,n);       //Multiplication function
-print(g,m,n);              //printing the result
-save(g,m,n);               //saving the result to the figure
+g=mult_int(f,b,m,n);        //Multiplication function
+print(g,m,n);               //printing the result
+save(g,m,n);                //saving the result to the figure
 }
 

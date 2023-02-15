@@ -188,45 +188,28 @@ return c;
 }
 //End function for transpose of matrix
 
-//Defining the function for generating uniform random numbers
-void uniform(char *str, int len)
+//Defining the function for multiplication
+double mat_mult(double **a, double **b, int m,int n, int p)
 {
-int i;
-FILE *fp;
-
-fp = fopen(str,"w");
-//Generate numbers
-for (i = 0; i < len; i++)
-{
-fprintf(fp,"%lf\n",(double)rand()/RAND_MAX);
-}
-fclose(fp);
-
-}
-//End function for generating uniform random numbers
-
-//Defining the function for calculating the mean of random numbers
-double mean(char *str)
-{
-int i=0,c;
-FILE *fp;
-double x, temp=0.0;
-
-fp = fopen(str,"r");
-//get numbers from file
-while(fscanf(fp,"%lf",&x)!=EOF)
-{
-//Count numbers in file
-i=i+1;
-//Add all numbers in file
-temp = temp+x;
-}
-fclose(fp);
-temp = temp/(i-1);
-return temp;
+int i, j, k;
+double c, temp =0;
+//c = createMat(m,p);                                                            
+for(i=0;i<m;i++)
+ {
+  for(k=0;k<p;k++)
+  {
+    for(j=0;j<n;j++)
+    {
+        temp= temp+a[i][j]*b[j][k];
+    }
+        c=temp;
+        temp = 0;
+  }
+ }
+return c;
 
 }
-//End function for calculating the mean of random numbers
+//End of the function for multiplication
 
 //Defining the function for multiplication with integer
 double **mult_int(int scalar,double **a,int m, int n)
@@ -261,11 +244,5 @@ void save(double **a, int rows, int cols) {
   }
   fclose(fp);
 }
-//End the function for save the file
 
-//function to calculate square of number
-double square(double num)
-{
-    return (num * num);
-}
-//End function to calculate square of number
+//End the function for save the file
