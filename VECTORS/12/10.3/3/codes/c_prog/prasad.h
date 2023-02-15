@@ -228,29 +228,7 @@ return temp;
 }
 //End function for calculating the mean of random numbers
 
-//Defining the function for generating Gaussian random numbers
-void gaussian(char *str, int len)
-{
-int i,j;
-double temp;
-FILE *fp;
-
-fp = fopen(str,"w");
-//Generate numbers
-for (i = 0; i < len; i++)
-{
-temp = 0;
-for (j = 0; j < 12; j++)
-{
-temp += (double)rand()/RAND_MAX;
-}
-temp-=6;
-fprintf(fp,"%lf\n",temp);
-}
-fclose(fp);
-
-}
-//End function for generating Gaussian random numbers
+//Defining the function for multiplication with integer
 double **mult_int(int scalar,double **a,int m, int n)
 {
   int i, j;
@@ -263,6 +241,9 @@ double **mult_int(int scalar,double **a,int m, int n)
   }
   return a;
 }
+//End the function for multiplication with integer
+
+//Defining the function for save the file
 void save(double **a, int rows, int cols) {
   FILE *fp;
   fp = fopen("result.dat", "w");
@@ -280,3 +261,11 @@ void save(double **a, int rows, int cols) {
   }
   fclose(fp);
 }
+//End the function for save the file
+
+//function to calculate square of number
+double square(double num)
+{
+    return (num * num);
+}
+//End function to calculate square of number
