@@ -20,7 +20,7 @@ print(c,n,m);               //printing the result
 d=matmul(c,b,n,m,n);        //Multiplications function 
 print(d,n,m);               //printing the result
 e=linalg_norm(b,m);         //Finding the norm of the matrix
-e1=e*e;                     //finding the Square of the norm
+e1=pow(e,2);                //finding the Square of the norm
 printf("%lf",e1);
 d1=d[0][0];                  
 f=d1/e1;                    //dividing the numerator with denominator
