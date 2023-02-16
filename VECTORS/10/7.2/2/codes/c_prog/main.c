@@ -1,5 +1,6 @@
 /*Code by Deva prasad 
 Feb 16, 2023 
+The coordinates of the points of trisection of the line segment joining (4,−1) and (−2,-3). 
 https://github.com/prasaddeva287/FWC/blob/main/LICENSE*/
 #include<stdio.h>          // including stdio.h it is used for standard input and output functions
 #include<stdlib.h>
