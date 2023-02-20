@@ -9,7 +9,6 @@ double cross_prod(double **a,double **b);
 double **concat_two(double **a,double **b);
 int rank(int r1, int c1,double **a);
 double **transpose(double **a,  int m, int n);
-double **createMat1(int m,int n);
 //End function declaration
 
 //Defining the function for matrix creation
@@ -27,7 +26,6 @@ a = (double **)malloc(m * sizeof( *a));
 }
 //End function for matrix creation
 
-
 //Defining the function for matrix creation
 double **createMat(int m,int n)
 {
@@ -42,7 +40,6 @@ a = (double **)malloc(m * sizeof( *a));
  return a;
 }
 //End function for matrix creation
-
 
 
 //Read  matrix from file
@@ -69,8 +66,6 @@ fclose(fp);
  return a;
 
 }
-
-
 
 //Defining the function for norm
 
@@ -170,70 +165,6 @@ int i,j;
         }
     }
     return A;
-}
-
-double **concat_two(double **a,double **b)
-{
-	double **f;
-	int m=2;
-	int n=2;
-	f=createMat(m,n);
-	f[0][0]=a[0][0];
-	f[0][1]=a[0][1];
-	f[1][0]=b[0][0];
-	f[1][1]=b[0][1];
-	return f;
-}
-
-void swap(int r1, int r2, int c,double **a)
-{
-   int t;
-   int i,j;
-   for(i=0;i<c;i++)
-   {
-      t= a[r1][i];
-      a[r1][i] = a[r2][i];
-      a[r2][i]=t;
-   }
-}
-	
-int rank(int r1, int c1,double **a)
-{
-    int i,j,k;
-    float ratio;
-    for(i=0;i<c1;i++)
-    {
-       if(a[i][i]!=0)    /* Diagonal element is not zero */
-     for(j=0;j<r1;j++)
-       if (j!=i)
-       {
-          /* Make all the element above and nelow the current principal
-         diagonal element zero */
-          ratio = a[j][i]/a[i][i];
-          for(k=0;k<c1;k++)
-         a[j][k]-=ratio*a[i][k];
-       }
-       else
-         printf("\n");
-         /* principal Diagonal element is zero */
-       else
-       {
-       for(j=i+1;j<r1;j++)
-          if(a[j][i]!=0)
-          {   /* Find non zero elements in the same column */
-          swap(i,j,c1,a);
-          break;
-          }
-          if(j==r1)
-          {
-          c1--;
-          for(j=0;j<r1;j++)
-             a[j][i] = a[j][c1];
-          }
-          i--;
-         }
-     }
-   return  c1;
 }
 
 
