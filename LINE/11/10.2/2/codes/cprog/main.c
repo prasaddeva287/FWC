@@ -12,8 +12,10 @@ https://github.com/prasaddeva287/FWC/blob/main/LICENSE*/
 //main Functions
 int main()                 
 {
-	double **P,**omat,**m,**n,**c;         //initializing the variables                   
-	int M=2,N=1;                           // initializing rows and colums
+	//initializing the variables 
+	double **P,**omat,**m,**n,**c; 
+	// initializing rows and colums
+	int M=2,N=1;                           
 	P=loadtxt("a.dat",2,1);		       //loading the point A from the text file
 	m=loadtxt("m.dat",2,1);                // loading Directional vector m
 	omat=loadtxt("omat.dat",2,2);          //loading the point omat from the text file
