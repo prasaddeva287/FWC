@@ -1,6 +1,6 @@
 /*Code by Deva prasad 
 Feb 13, 2023
-To find the projection of the vector from (1,-1) and (1,1)
+Find the equation of the circle with centre (-a,-b) and radius \sqrt{a^2-b^2}
 https://github.com/prasaddeva287/FWC/blob/main/LICENSE*/
 #include<stdio.h>          // including stdio.h it is used for standard input and output functions
 #include<stdlib.h>
