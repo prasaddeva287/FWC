@@ -11,7 +11,7 @@ def circ_gen(O,r):
  x_circ[1,:] = r*np.sin(theta)
  x_circ = (x_circ.T + O).T
  return x_circ 
-c=np.array([3,2])
+c=np.array([-3,-2])
 r=np.sqrt(3**2-2**2)
 #equation of circle
 # circle parameters
